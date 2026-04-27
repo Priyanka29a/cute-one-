@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Special Person 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Floating particles background -->
+  <div id="particles"></div>
+
+  <!-- Floating balloons -->
+  <div class="balloons" id="balloons"></div>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="bear-left">🧸</div>
+      <div class="title-block">
+        <p class="subtitle typing-text" id="typingText"></p>
+        <h1 class="main-title">For My Special Person 💖</h1>
+        <p class="tagline">Every heartbeat, every smile — it's all because of you ✨</p>
+      </div>
+      <div class="bear-right">🧸</div>
+    </div>
+    <div class="scroll-hint">scroll down 💕</div>
+  </header>
+
+  <!-- Reasons section -->
+  <section class="section reasons-section">
+    <h2 class="section-title">Reasons Why I Love You ❤️</h2>
+    <div class="reasons-grid" id="reasonsGrid"></div>
+  </section>
+
+  <!-- World Better section -->
+  <section class="section world-section">
+    <h2 class="section-title">You Make My World Better 🌍</h2>
+    <div class="world-cards" id="worldCards"></div>
+  </section>
+
+  <!-- Photo placeholder section -->
+  <section class="section photos-section">
+    <h2 class="section-title">Our Little Universe 🌸</h2>
+    <div class="photo-grid">
+      <div class="photo-card">📸 <span>Your Smile</span></div>
+      <div class="photo-card big">💞 <span>Us Together</span></div>
+      <div class="photo-card">🌷 <span>Our Memories</span></div>
+      <div class="photo-card">🌙 <span>Our Nights</span></div>
+      <div class="photo-card big">✨ <span>Our Future</span></div>
+      <div class="photo-card">🦋 <span>Your Laugh</span></div>
+    </div>
+  </section>
+
+  <!-- Love button section -->
+  <section class="section love-button-section">
+    <h2 class="section-title">The Big Question 💌</h2>
+    <p class="question-text">Do you love me?</p>
+    <div class="btn-container">
+      <button class="btn-yes" id="yesBtn" onclick="handleYes()">Yes! 💖</button>
+      <button class="btn-no" id="noBtn" onmouseover="runAway()" onclick="handleNo()">No 😐</button>
+    </div>
+    <p class="angry-note" id="angryNote"></p>
+  </section>
+
+  <!-- Celebration overlay -->
+  <div class="celebration-overlay" id="celebrationOverlay">
+    <div class="celebration-box">
+      <div class="celebration-emoji">🥳💖🎉</div>
+      <h2>YAY! I knew it! 💕</h2>
+      <p>You just made my whole universe glow brighter ✨<br>I love you more than all the stars combined 🌟</p>
+      <div class="confetti-row" id="confettiRow"></div>
+      <button onclick="closeCelebration()">Aww, close 🥹</button>
+    </div>
+  </div>
+
+  <!-- Surprise popup -->
+  <div class="surprise-popup" id="surprisePopup">
+    <span class="close-popup" onclick="closePopup()">×</span>
+    <div class="popup-content">
+      <div class="popup-emoji">💌</div>
+      <h3>A secret message for you...</h3>
+      <p id="surpriseMessage"></p>
+    </div>
+  </div>
+
+  <!-- Music toggle -->
+  <button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Toggle Music">🎵</button>
+
+  <!-- Audio (royalty-free soft music placeholder) -->
+  <audio id="bgMusic" loop>
+    <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
